@@ -81,6 +81,18 @@ app.get('/form', (req, res) => {
 app.get('/donation', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'donation.html'));
 });
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'about.html'));
+});
+app.get('/programs', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'programs.html'));
+});
+app.get('/involved', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'involved.html'));
+});
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+});
 
 // Start server
 const PORT = process.env.PORT || 5000;

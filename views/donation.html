@@ -6,30 +6,96 @@
   <title>Save a Life</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="//code.tidio.co/akh5hzykycvl1vj5l58wkqvimaivzslu.js" async></script>
   <link href="/css/style.css" rel="stylesheet">
   <script src="//code.tidio.co/akh5hzykycvl1vj5l58wkqvimaivzslu.js" async></script>
+
+  <style>
+    .about-section {
+        padding: 50px 0;
+    }
+    .mission-vision {
+        margin-top: 30px;
+    }
+    .core-values, .our-impact, .our-story {
+        margin-top: 30px;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .heading {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .subheading {
+        font-family: 'Lora', serif;
+    }
+    .paragraph {
+        font-family: 'Roboto', sans-serif;
+    }
+    .quote {
+        font-family: 'Lora', serif;
+        font-style: italic;
+    }
+</style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg text-white navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Save a Life</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+        <img src="/images/sv.jpeg" style="height:70px" />
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#donationForm">Submit Donation</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="/donation">Donate</a>
-        </li>
-      </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/programs">Programs</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
   <div class="container mt-4 text-center">
     <div class="fw-bold bg-dark p-3 text-white shadow p-3">
-        <h1>Donate Now</h1>
+        <h3>Donate Now</h3>
+        <section class="donation-section bg-light text-dark">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center animate__animated animate__bounce">
+                      <h3 class="section-heading">Make a Donation</h3>
+                      <p class="lead">Your generosity can save lives. Choose an amount to donate.</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 offset-lg-3 animate__animated animate__fadeInUp">
+                      <form class="p-3">
+                          <div class="form-group">
+                              <label for="donationAmount">Select Donation Amount</label>
+                              <select class="form-control" id="donationAmount">
+                                  <option>$100</option>
+                                  <option>$500</option>
+                                  <option>$1000</option>
+                                  <option>$5000</option>
+                                  <option>Other</option>
+                              </select>
+                          </div>
+                          <button type="button" class="btn btn-dark p-3" data-toggle="modal" data-target="#myModal"  data-toggle="modal" data-target="#contactModal">Make Donation</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
         <p>Choose your preferred payment method:</p>
     </div>
     <div class="container mt-5 shadow p-3  ">
@@ -94,6 +160,14 @@
     </div>
   </div>
 
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0F-913aVLuleg6KKtYAmMJaBfHndkXf-wf5izNWBAUYPY2Gh1ta0uNvT_aGTxEyP2PQ&usqp=CAU" class="img-fluid" alt="Image 1">
+        </div>
+    </div>
+</div>
+
   <!-- Footer -->
   <footer class="bg-light text-center text-lg-start mt-4">
     <div class="container p-4">
@@ -106,7 +180,7 @@
           <h5 class="text-uppercase">Contact Us</h5>
           <ul class="list-unstyled mb-0">
             <!-- <li><a href="#contact" class="text-dark">Email: info@savealife.org</a></li> -->
-            <li><a href="#contact" class="text-dark">Phone: (123) 456-7890</a></li>
+            <!-- <li><a href="#contact" class="text-dark">Phone: (123) 456-7890</a></li> -->
           </ul>
         </div>
       </div>
